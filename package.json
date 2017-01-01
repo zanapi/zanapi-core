@@ -1,0 +1,63 @@
+{
+  "name": "zanapi-core",
+  "version": "0.0.1",
+  "description": "Core parser library to generate zanapi result following the zanapi-spec",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zanapi/zanapi-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zanapi/zanapi-core/issues"
+  },
+  "scripts": {
+    "test": "npm run jshint && mocha test/**/*_test.js",
+    "jshint": "jshint lib/ test/",
+    "check-updates": "npm-check-updates"
+  },
+  "keywords": [
+    "api",
+    "zanapi",
+    "doc",
+    "documentation",
+    "rest",
+    "restful"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "glob": "^7.0.3",
+    "iconv-lite": "^0.4.13",
+    "lodash": "~4.11.1",
+    "semver": "~5.1.0",
+    "wrench": "~1.5.9"
+  },
+  "devDependencies": {
+    "zanapi-example": "*",
+    "jshint": "~2.9.2",
+    "markdown-it": "^6.0.1",
+    "mocha": "~2.4.5",
+    "npm-check-updates": "^2.6.3",
+    "should": "~8.3.1"
+  },
+  "jshintConfig": {
+    "camelcase": true,
+    "curly": false,
+    "eqeqeq": true,
+    "forin": true,
+    "latedef": false,
+    "newcap": true,
+    "undef": true,
+    "unused": true,
+    "trailing": true,
+    "node": true,
+    "browser": true,
+    "predef": [
+      "it",
+      "describe",
+      "before",
+      "after"
+    ]
+  }
+}
